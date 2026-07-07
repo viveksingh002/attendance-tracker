@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>Attendance Tracker</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="attendance-tracker.css">
+</head>
+
+<body>
+    <div class="record">
+        <h1>Student Attendance System</h1>
+        <div class="top">
+            <input class="addname" id="game" placeholder="Enter student name">
+            <button class="addstudent" onclick="addstudent()">Add Student</button>
+            <button class="saveattendance">Save Attendance</button>
+        </div>
+     <table>
+
+    <tr>
+        <th>ID</th>
+        <th>Student name</th>
+        <th>Status</th>
+        <th>Attendance</th>
+        <th>Action</th>
+    </tr>
+
+    <tbody id="studentList">
+        
+
+    </tbody>
+
+</table>
+<div class="total">
+                
+           <h2>Total Student: <span id="totalstudent">0</span></h2>
+<h2>Present: <span id="totalpresent">0</span></h2>
+<h2>Absent: <span id="totalabsent">0</span></h2>
+</div>
+
+    </div>
+
+    <script src="attendance-tracker.js"></script>
+</body>
+
+</html>
